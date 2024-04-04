@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Запускаємо скрипт для генерації відео
+# Generate video
 python video_master.py &
 
-# Запускаємо скрипт для трансляції на YouTube
+# Broadcast to YouTube
 python translation_master.py

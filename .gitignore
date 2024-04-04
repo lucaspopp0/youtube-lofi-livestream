@@ -1,2 +1,3 @@
 *.pyc
-resources/music_files
+resources/music_files/
+temp/

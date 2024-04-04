@@ -1,7 +1,7 @@
-# Використовуємо офіційний образ Python
+# Official Python image
 FROM python:3.9
 
-# Оновлюємо пакети та встановлюємо необхідні залежності
+# Update packages and install dependencies
 RUN apt-get update && \
     apt-get install -y ffmpeg git && \
     apt-get clean && \
