@@ -7,14 +7,10 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
-
-RUN git clone https://github.com/nordost8/Simple-Youtube-LoFi-radio-streamer-py.git
-
-WORKDIR /app/Simple-Youtube-LoFi-radio-streamer-py
+COPY . .
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 RUN chmod +x ./run.sh
-CMD ["sh", "-c", "git -C /app/Simple-Youtube-LoFi-radio-streamer-py pull && ./run.sh"]
+CMD ["sh", "-c", "./run.sh"]
