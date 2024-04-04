@@ -5,9 +5,9 @@ from .src.streamanalyzer import StreamAnalyzer
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--audio_path', type=int, dest='audio_path',
-                        help='Audio file path in system (ex.: ./resource/my_audio.mp3'),
+                        help='Audio file path in system (ex.: ./resources/my_audio.mp3'),
     parser.add_argument('--background_path', type=int, dest='background_path',
-                        help='Background image path in system (ex.: ./resource/image.jpg'),
+                        help='Background image path in system (ex.: ./resources/image.jpg'),
     parser.add_argument('--height', type=int, default=1080, dest='height',
                         help='height, in pixels, of the visualizer window'),
     parser.add_argument('--updates_per_second', type=int, default=24, dest='updates_per_second',

@@ -7,15 +7,15 @@
 
 **Usage:**
 
-- Place the audio files you want to include in your radio in the "resource/music_files" folder.
-- After video generation, they will be stored in the "resource/ready_videos" folder.
+- Place the audio files you want to include in your radio in the "resources/music_files" folder.
+- After video generation, they will be stored in the "resources/ready_videos" folder.
 
 **Running:**
 
 - You can use the "run.sh" script or launch a Docker container. A "Dockerfile" is available in the repository for this purpose.
 
 ```bash
-docker run -d -v ${PWD}/resource/music_files:/app/Simple-Youtube-LoFi-radio-streamer-py/resource/music_files -v ${PWD}/resource/ready_videos:/app/Simple-Youtube-LoFi-radio-streamer-py/resource/ready_videos -it -e YOUTUBE_STREAM_KEY="your-stream-key" -e VIDEO_GROUPED="5" radio
+docker run -d -v ${PWD}/resources/music_files:/app/Simple-Youtube-LoFi-radio-streamer-py/resources/music_files -v ${PWD}/resources/ready_videos:/app/Simple-Youtube-LoFi-radio-streamer-py/resources/ready_videos -it -e YOUTUBE_STREAM_KEY="your-stream-key" -e VIDEO_GROUPED="5" radio
 ```
 
 **Environment Variables:**
